@@ -84,12 +84,14 @@ public class Student {
         if (bookIDNumber != student.bookIDNumber) return false;
         if (groupNumber != student.groupNumber) return false;
         if (!name.equals(student.name)) return false;
+        if (!surname.equals(student.surname)) return false;
         return sex.equals(student.sex);
     }
 
     @Override
     public int hashCode() {
         int result = name.hashCode();
+        result = 31 * result + surname.hashCode();
         result = 31 * result + sex.hashCode();
         result = 31 * result + age;
         result = 31 * result + bookIDNumber;

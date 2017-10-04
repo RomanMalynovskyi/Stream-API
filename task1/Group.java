@@ -43,7 +43,6 @@ public class Group {
             student.setGroupNumber(number);
             listStudents.add(student);
         }
-
     }
 
     public void removeStudent(Student student) {
@@ -52,24 +51,6 @@ public class Group {
         } else {
             System.out.println("Student not not founded!");
         }
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Group group = (Group) o;
-
-        if (number != group.number) return false;
-        return listStudents.equals(group.listStudents);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = listStudents.hashCode();
-        result = 31 * result + number;
-        return result;
     }
 
     public void printGroup() {
