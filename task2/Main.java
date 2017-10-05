@@ -2,7 +2,8 @@ package com.gmail.malynovskyiroman.java.stream_api.task2;
 
       /*Напишите метод который найдет в массиве целых чисел число модуль
         которого ближе всего к 0. Если есть два таких числа (например 2 и -2)
-        верните положительное.*/
+        верните положительное.
+        Внимание!3адание решить используя stream API*/
 
 import java.util.Arrays;
 import java.util.Comparator;
